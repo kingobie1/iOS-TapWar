@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E07C8DC91CFF7676008F84FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C8DC81CFF7676008F84FA /* AppDelegate.swift */; };
-		E07C8DCB1CFF7676008F84FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C8DCA1CFF7676008F84FA /* ViewController.swift */; };
+		E07C8DCB1CFF7676008F84FA /* MainGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C8DCA1CFF7676008F84FA /* MainGameViewController.swift */; };
 		E07C8DCE1CFF7676008F84FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07C8DCC1CFF7676008F84FA /* Main.storyboard */; };
 		E07C8DD01CFF7676008F84FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07C8DCF1CFF7676008F84FA /* Assets.xcassets */; };
 		E07C8DD31CFF7676008F84FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07C8DD11CFF7676008F84FA /* LaunchScreen.storyboard */; };
 		E07C8DDE1CFF7676008F84FA /* TapWarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C8DDD1CFF7676008F84FA /* TapWarTests.swift */; };
+		E07C8DE91CFF83C7008F84FA /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C8DE81CFF83C7008F84FA /* GameOverViewController.swift */; };
+		E0E2F6511CFF87D000F6E62D /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2F6501CFF87D000F6E62D /* GameData.swift */; };
+		E0E2F6531CFFA67C00F6E62D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2F6521CFFA67C00F6E62D /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,7 @@
 /* Begin PBXFileReference section */
 		E07C8DC51CFF7676008F84FA /* TapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07C8DC81CFF7676008F84FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E07C8DCA1CFF7676008F84FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E07C8DCA1CFF7676008F84FA /* MainGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameViewController.swift; sourceTree = "<group>"; };
 		E07C8DCD1CFF7676008F84FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E07C8DCF1CFF7676008F84FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E07C8DD21CFF7676008F84FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		E07C8DD91CFF7676008F84FA /* TapWarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapWarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07C8DDD1CFF7676008F84FA /* TapWarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapWarTests.swift; sourceTree = "<group>"; };
 		E07C8DDF1CFF7676008F84FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E07C8DE81CFF83C7008F84FA /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		E0E2F6501CFF87D000F6E62D /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		E0E2F6521CFFA67C00F6E62D /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				E07C8DC81CFF7676008F84FA /* AppDelegate.swift */,
-				E07C8DCA1CFF7676008F84FA /* ViewController.swift */,
+				E0E2F6501CFF87D000F6E62D /* GameData.swift */,
+				E07C8DCA1CFF7676008F84FA /* MainGameViewController.swift */,
+				E0E2F6521CFFA67C00F6E62D /* ColorExtension.swift */,
+				E07C8DE81CFF83C7008F84FA /* GameOverViewController.swift */,
 				E07C8DCC1CFF7676008F84FA /* Main.storyboard */,
 				E07C8DCF1CFF7676008F84FA /* Assets.xcassets */,
 				E07C8DD11CFF7676008F84FA /* LaunchScreen.storyboard */,
@@ -146,6 +155,7 @@
 				TargetAttributes = {
 					E07C8DC41CFF7676008F84FA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DBCGFK6SVZ;
 					};
 					E07C8DD81CFF7676008F84FA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -197,8 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07C8DCB1CFF7676008F84FA /* ViewController.swift in Sources */,
+				E07C8DCB1CFF7676008F84FA /* MainGameViewController.swift in Sources */,
+				E0E2F6511CFF87D000F6E62D /* GameData.swift in Sources */,
 				E07C8DC91CFF7676008F84FA /* AppDelegate.swift in Sources */,
+				E07C8DE91CFF83C7008F84FA /* GameOverViewController.swift in Sources */,
+				E0E2F6531CFFA67C00F6E62D /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +342,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TapWar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TapWar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -340,10 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TapWar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TapWar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -390,6 +409,7 @@
 				E07C8DE41CFF7676008F84FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E07C8DE51CFF7676008F84FA /* Build configuration list for PBXNativeTarget "TapWarTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +418,7 @@
 				E07C8DE71CFF7676008F84FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
