@@ -20,10 +20,14 @@ class MainGameViewController: UIViewController {
     @IBOutlet weak var topButton: UIButton!
     @IBOutlet weak var bottomButton: UIButton!
     
+    @IBOutlet var BottomButtonHeight: NSLayoutConstraint!
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
+    
+    var bottomButtonHeightChunk: CGFloat?
 
     override func viewDidLoad() {
+        
         let topButtonColor = UIColor(netHex: 0x53ccf7)
         let bottomButtonColor = UIColor(netHex: 0xec6559)
         
@@ -47,6 +51,7 @@ class MainGameViewController: UIViewController {
     @IBAction func topButtonAction(sender: AnyObject) {
         
         score += 1
+        
         reloadScoreLabels()
         testScore()
     }
