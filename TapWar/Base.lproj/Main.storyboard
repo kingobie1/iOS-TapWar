@@ -22,6 +22,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esk-1r-vNX">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <color key="backgroundColor" red="1" green="0.50436221308174778" blue="0.48646935589363272" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="dkh-j3-tA5"/>
+                                </constraints>
                                 <connections>
                                     <action selector="bottomButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZf-B9-ndW"/>
                                 </connections>
@@ -67,6 +70,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="PxK-95-vxa"/>
                                 <exclude reference="dQf-4o-bLd"/>
                                 <exclude reference="B8p-qR-gxK"/>
                                 <exclude reference="WSx-Z5-LuD"/>
@@ -77,6 +81,7 @@
                     <connections>
                         <outlet property="BottomButtonHeight" destination="PxK-95-vxa" id="g0V-gL-S6J"/>
                         <outlet property="bottomButton" destination="Esk-1r-vNX" id="ApG-G1-SaR"/>
+                        <outlet property="bottomButtonHeight" destination="dkh-j3-tA5" id="Qzp-LD-3IM"/>
                         <outlet property="bottomLabel" destination="oRH-Nq-7PK" id="03u-2C-faK"/>
                         <outlet property="topButton" destination="6Q4-8K-ern" id="LFB-ju-75S"/>
                         <outlet property="topLabel" destination="6PA-13-GIZ" id="Uf4-L5-vEE"/>
@@ -163,7 +168,7 @@
                     <connections>
                         <outlet property="bottomButton" destination="xxZ-a8-ban" id="7zZ-Yx-fVq"/>
                         <outlet property="bottomLabel" destination="YEy-ym-jt6" id="i1v-uZ-oNG"/>
-                        <outlet property="playAgainButton" destination="QCd-QS-wSy" id="hRd-Yv-Dhb"/>
+                        <outlet property="playAgainButton" destination="QCd-QS-wSy" id="INZ-Oh-9t0"/>
                         <outlet property="topButton" destination="MFA-ru-73V" id="czp-uN-nZW"/>
                         <outlet property="topLabel" destination="YPi-2L-CX2" id="BzL-K3-820"/>
                     </connections>
