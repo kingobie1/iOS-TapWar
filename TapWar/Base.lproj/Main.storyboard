@@ -37,13 +37,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PA-13-GIZ">
-                                <rect key="frame" x="263" y="224" width="74.5" height="36"/>
+                                <rect key="frame" x="263" y="250" width="74.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRH-Nq-7PK">
-                                <rect key="frame" x="263" y="340" width="74.5" height="36"/>
+                                <rect key="frame" x="263" y="314" width="74.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                         <constraints>
                             <constraint firstItem="oRH-Nq-7PK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B8p-qR-gxK"/>
                             <constraint firstItem="6Q4-8K-ern" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Daw-1Y-U9h"/>
-                            <constraint firstItem="6PA-13-GIZ" firstAttribute="top" secondItem="6Q4-8K-ern" secondAttribute="bottom" constant="-76" id="DwW-5O-pIL"/>
+                            <constraint firstItem="6PA-13-GIZ" firstAttribute="top" secondItem="6Q4-8K-ern" secondAttribute="bottom" constant="-50" id="DwW-5O-pIL"/>
                             <constraint firstAttribute="trailing" secondItem="Esk-1r-vNX" secondAttribute="trailing" id="F7B-Fx-HZe"/>
                             <constraint firstItem="6PA-13-GIZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J1c-gf-wAq"/>
                             <constraint firstItem="Esk-1r-vNX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="PxK-95-vxa"/>
@@ -65,7 +65,7 @@
                             <constraint firstAttribute="trailing" secondItem="6Q4-8K-ern" secondAttribute="trailing" id="djR-Xp-xLf"/>
                             <constraint firstItem="Esk-1r-vNX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jtq-vV-glE"/>
                             <constraint firstItem="oRH-Nq-7PK" firstAttribute="top" secondItem="6PA-13-GIZ" secondAttribute="bottom" constant="16" id="ohL-sv-2EH"/>
-                            <constraint firstItem="Esk-1r-vNX" firstAttribute="top" secondItem="oRH-Nq-7PK" secondAttribute="bottom" constant="-76" id="qaV-2E-163"/>
+                            <constraint firstItem="Esk-1r-vNX" firstAttribute="top" secondItem="oRH-Nq-7PK" secondAttribute="bottom" constant="-50" id="qaV-2E-163"/>
                             <constraint firstItem="oRH-Nq-7PK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zLm-tR-CP9"/>
                         </constraints>
                         <variation key="default">

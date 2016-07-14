@@ -90,8 +90,17 @@ class MainGameViewController: UIViewController {
     // MARK: Helper Functions
     
     func reloadScoreLabels() {
-        topLabel.text = "\(score)"
-        bottomLabel.text = "\(score)"
+        
+        if score < 0 {
+            topLabel.text = "\(score)"
+            bottomLabel.text = "\(-score)"
+        } else if score > 0 {
+            topLabel.text = "\(score)"
+            bottomLabel.text = "\(-score)"
+        } else {
+            topLabel.text = "\(score)"
+            bottomLabel.text = "\(score)"
+        }
     }
     
     func testScore() {
