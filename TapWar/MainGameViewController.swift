@@ -39,6 +39,8 @@ class MainGameViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         resetGame()
+        
+
 
         topLabel.textColor = textColor
         bottomLabel.textColor = textColor
@@ -47,6 +49,13 @@ class MainGameViewController: UIViewController {
         topLabel.transform = CGAffineTransformMakeRotation(3.14)
     }
 
+    override func viewDidLayoutSubviews() {
+        let fontSize = self.view.frame.height / 24
+
+        topLabel.font = bottomLabel.font.fontWithSize(fontSize)
+        bottomLabel.font =  bottomLabel.font.fontWithSize(fontSize)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
