@@ -391,6 +391,7 @@
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = TapWar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TapWar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +410,7 @@
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = TapWar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TapWar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
