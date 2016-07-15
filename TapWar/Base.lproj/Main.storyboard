@@ -53,11 +53,13 @@
                         <constraints>
                             <constraint firstItem="oRH-Nq-7PK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B8p-qR-gxK"/>
                             <constraint firstItem="6Q4-8K-ern" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Daw-1Y-U9h"/>
-                            <constraint firstItem="6PA-13-GIZ" firstAttribute="top" secondItem="6Q4-8K-ern" secondAttribute="bottom" constant="-50" id="DwW-5O-pIL"/>
+                            <constraint firstItem="6PA-13-GIZ" firstAttribute="top" secondItem="6Q4-8K-ern" secondAttribute="bottom" priority="750" constant="-50" id="DwW-5O-pIL"/>
                             <constraint firstAttribute="trailing" secondItem="Esk-1r-vNX" secondAttribute="trailing" id="F7B-Fx-HZe"/>
                             <constraint firstItem="6PA-13-GIZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J1c-gf-wAq"/>
+                            <constraint firstItem="6PA-13-GIZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Mut-wC-7zC"/>
                             <constraint firstItem="Esk-1r-vNX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="PxK-95-vxa"/>
                             <constraint firstItem="Esk-1r-vNX" firstAttribute="top" secondItem="6Q4-8K-ern" secondAttribute="bottom" id="T6L-Ky-vQ6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oRH-Nq-7PK" secondAttribute="bottom" priority="800" id="WQ8-Z8-q6E"/>
                             <constraint firstItem="oRH-Nq-7PK" firstAttribute="top" secondItem="6Q4-8K-ern" secondAttribute="bottom" constant="8" id="WSx-Z5-LuD"/>
                             <constraint firstItem="6Q4-8K-ern" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bEk-97-ERQ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Esk-1r-vNX" secondAttribute="bottom" id="bJ5-7Z-T4d"/>
@@ -65,7 +67,7 @@
                             <constraint firstAttribute="trailing" secondItem="6Q4-8K-ern" secondAttribute="trailing" id="djR-Xp-xLf"/>
                             <constraint firstItem="Esk-1r-vNX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jtq-vV-glE"/>
                             <constraint firstItem="oRH-Nq-7PK" firstAttribute="top" secondItem="6PA-13-GIZ" secondAttribute="bottom" constant="16" id="ohL-sv-2EH"/>
-                            <constraint firstItem="Esk-1r-vNX" firstAttribute="top" secondItem="oRH-Nq-7PK" secondAttribute="bottom" constant="-50" id="qaV-2E-163"/>
+                            <constraint firstItem="Esk-1r-vNX" firstAttribute="top" secondItem="oRH-Nq-7PK" secondAttribute="bottom" priority="750" constant="-50" id="qaV-2E-163"/>
                             <constraint firstItem="oRH-Nq-7PK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zLm-tR-CP9"/>
                         </constraints>
                         <variation key="default">
