@@ -47,6 +47,8 @@ class GameOverViewController: UIViewController {
             bottomLabel.text = "Winner"
             topButton.backgroundColor = loseButtonColor
             bottomButton.backgroundColor = winButtonColor
+            
+            playAgainButton.transform = CGAffineTransformMakeRotation(3.14)
         }
         
         playAgainButton.backgroundColor = playAgainButtonColor
@@ -61,6 +63,10 @@ class GameOverViewController: UIViewController {
         playAgainButton.frame = CGRectMake(0, 0, playBounds, playBounds)
         playAgainButton.layer.cornerRadius = playAgainButton.bounds.height
 //        playAgainButton.clipsToBounds = true
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     // MARK: Actions.
