@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,18 +19,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oba's Tap Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rab-au-RY0">
-                                <rect key="frame" x="157.5" y="276" width="285.5" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dMa-dI-56e">
+                                <rect key="frame" x="180" y="240" width="240" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Eey-BF-03x"/>
+                                    <constraint firstAttribute="width" secondItem="dMa-dI-56e" secondAttribute="height" multiplier="1:1" id="OkC-j6-C2i"/>
+                                    <constraint firstAttribute="width" secondItem="dMa-dI-56e" secondAttribute="height" multiplier="2:1" id="ZnB-1o-2e2"/>
+                                    <constraint firstAttribute="width" constant="100" id="hZf-EE-KAt"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Eey-BF-03x"/>
+                                        <exclude reference="OkC-j6-C2i"/>
+                                        <exclude reference="hZf-EE-KAt"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.75294117647058822" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Rab-au-RY0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="32d-pd-Pfc"/>
-                            <constraint firstItem="Rab-au-RY0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wPT-RC-Zhf"/>
+                            <constraint firstItem="dMa-dI-56e" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.2" id="2p9-Ea-Z0o"/>
+                            <constraint firstItem="dMa-dI-56e" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" id="4vJ-vK-Y4A"/>
+                            <constraint firstItem="dMa-dI-56e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ARI-sr-orD"/>
+                            <constraint firstItem="dMa-dI-56e" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.3" id="gNQ-ra-M0a"/>
+                            <constraint firstItem="dMa-dI-56e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rcI-vu-ApG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2p9-Ea-Z0o"/>
+                                <exclude reference="gNQ-ra-M0a"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -36,4 +57,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchLogo" width="1297" height="546"/>
+    </resources>
 </document>
